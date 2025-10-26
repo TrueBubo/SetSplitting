@@ -33,7 +33,7 @@ def main():
     with tempfile.NamedTemporaryFile(mode="w+", delete=True) as temp_file:
         print("\n".join([" ".join(tuple(map(str, clause))) for clause in clauses]), file=temp_file)
         temp_file.flush()
-        command: list[str] = ["glucose", "-model", temp_file.name]
+        command: list[str] = ["./glucose", "-model", temp_file.name]
         result = subprocess.run(command, capture_output=True, text=True)
         if result.returncode == 10:
             print("Satisfiable")
