@@ -1,6 +1,6 @@
 # Set Splitting SAT solver
 ## Problem
-According to [wikipedia](https://en.wikipedia.org/wiki/Set_splitting_problem)
+According to [Wikipedia](https://en.wikipedia.org/wiki/Set_splitting_problem)
 > The set splitting problem is the following decision problem: given a family F of subsets of a finite set S, decide whether there exists a partition of S into two subsets $S_1$, $S_2$ such that all elements of F are split by this partition, i.e., none of the elements of F is completely in $S_1$ or $S_2$.
 
 ## Usage
@@ -10,7 +10,7 @@ python set-splitting-sat.py [INPUT]
 ```
 
 Additional options include  
-`--only-conversion` - Will print the CNF clauses generated, and will not attempt to solve them
+`--only-conversion` - Will print the CNF clauses generated, and will not attempt to solve them  
 `--verbose` - Prints the clauses, and also solves the problem
 
 ## Input
