@@ -16,7 +16,7 @@ Additional options include
 ## Input
 Input file includes the list of subsets of a finite set S. Each subset of new line with elements seperated by spaces.
 It will implicitly assume the list goes from 1 to the highest number mentioned. If you have elements not mentioned in
-subsets, they can go to both S1 and S2.
+subsets, they can go to both $S_1$ and $S_2$.
 
 Example input:
 ```
@@ -43,6 +43,24 @@ The example DIMACS CNF of the above input
 -1 -3 0
 -1 -4 0
 ```
+
+# Output
+If the problem is solvable, it will print Satisfiable, and the list of numbers. Positive number indicated the $i$-th
+element is in $S_1$, negative indicates it is in $S_2$
+
+Output for the above example
+```
+Satisfiable
+-1 2 3 4
+```
+
+Hence, $S_1 = \{2, 3, 4\}$ and $S_2 = \{1\}$
+
+If the problem is unsolvable, it will print
+```
+Unsatisfiable
+```
+
 
 ## Experiments
 In [inputs/](inputs)
