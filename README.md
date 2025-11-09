@@ -29,10 +29,10 @@ Example input:
 Let assume the variable $p_i$ is equivalent to this statement: the $i$-th element lies in $S_1$  
 From the problem definition `none of the elements of F is completely in S1 or S2`, we can deduce that for each subset
 we cannot have all the element in $S_1$. Let $a_1 \dots a_k$ be the element of subset. Then the following is false
-$a_1 \land a_2 \dots \land a_k$. From De Morgan's laws we can rewrite the negation of this statement as $a_1 \lor a_2 
-\dots \lor a_k$. It also cannot be entirely in $S_2$, not lying in $S_1$ means lying in $S_2$, hence the $i$-th element
-lying in $S_1$ will be denoted as $\lnot p_1$. And using the same principles as before we can get clause 
-$\lnot a_1 \lor \lnot a_2 \dots \lnot a_k$. This must be true for every set, hence the clauses will be anded together.
+$a_1 \land a_2 \dots \land a_k$. From De Morgan's laws we can rewrite the negation of this statement as $\lnot a_1 \lor \lnot a_2 
+\dots \lor \lnot a_k$. It also cannot be entirely in $S_2$, not lying in $S_1$ means lying in $S_2$, hence the $i$-th element
+lying in $S_1$ will be denoted as $\lnot p_1$. And using the same principles as before we can get following clause 
+$a_1 \lor a_2 \dots \lor a_k$. This must be true for every set, hence the clauses will be anded together.
 
 The example DIMACS CNF of the above input
 ```s
@@ -54,7 +54,7 @@ Satisfiable
 -1 2 3 4
 ```
 
-Hence, $S_1 = \{2, 3, 4\}$ and $S_2 = \{1\}$
+Hence, $S_1 = \\{2, 3, 4\\}$ and $S_2 = \\{1\\}$
 
 If the problem is unsolvable, it will print
 ```
