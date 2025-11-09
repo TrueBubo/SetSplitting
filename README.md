@@ -27,7 +27,7 @@ Example input:
 
 ## Encoding
 Let assume the variable $p_i$ is equivalent to this statement: the $i$-th element lies in $S_1$  
-From the problem definition `none of the elements of F is completely in S1 or S2`, we can deduct that for each subset
+From the problem definition `none of the elements of F is completely in S1 or S2`, we can deduce that for each subset
 we cannot have all the element in $S_1$. Let $a_1 \dots a_k$ be the element of subset. Then the following is false
 $a_1 \land a_2 \dots \land a_k$. From De Morgan's laws we can rewrite the negation of this statement as $a_1 \lor a_2 
 \dots \lor a_k$. It also cannot be entirely in $S_2$, not lying in $S_1$ means lying in $S_2$, hence the $i$-th element
